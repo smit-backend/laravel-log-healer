@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/laravel-log-healer",
+    "description": "AI-powered log listener that analyzes production error traces, isolates root causes, and suggests contextual code fixes.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\LogHealer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\LogHealer\\PackageServiceProvider"
+            ]
+        }
+    }
+}
